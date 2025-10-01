@@ -1,0 +1,191 @@
+/* ================================
+   Estilos para el navbar de la tienda de frutas
+   --------------------------------
+   - Se elimina el margen y padding por defecto de html y body.
+   - Navbar con display flex para alinear logo, búsqueda y carrito.
+   - Logo a la izquierda con tamaño de fuente más grande y negrita.
+   - Centro del navbar (buscador) usando flexbox con espacio entre elementos (gap).
+   - Input de búsqueda con padding y bordes redondeados.
+   - Nombre del alumno y carrito a la derecha, con tamaño de fuente mayor y negrita.
+   - Margen inferior en el navbar para separar de la sección de productos.
+   ================================ */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #28a745; 
+    color: white; 
+    margin-bottom: 20px;             
+}
+
+.nav-left .logo {
+    font-size: 1.4rem; 
+    font-weight: bold;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+.nav-center input {
+    font-size: 1em;  
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#contador-carrito {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#nombre-alumno {
+    font-size: 1.2em;  
+    font-weight: bold;
+    
+}
+
+
+
+/* ================================
+   Estilos para las tarjetas de productos
+   Incluye: contenedor de productos, cards, imagenes, títulos, precios y botones
+   ================================ */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-frutas {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; 
+} 
+
+.card-producto {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;          
+    flex-direction: column;  
+    align-items: center;   
+}
+
+.card-producto img {
+    width: 80%;     
+    height: 110px;      
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 5px;
+}
+
+.card-producto h3,
+.card-producto p {
+    margin: 5px;
+}
+
+.card-producto button {
+    padding: 9px;            
+    background-color: #28a745;    
+    color: white;                 
+    border: none;                 
+    border-radius: 5px;           
+    cursor: pointer;              
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.card-producto button:hover {
+    background-color: #218838;     
+    transform: scale(1.05);       
+}
+
+
+/* 
+    Estilos del carrito:
+
+    #contenedor-carrito: fondo gris, padding, título centrado.
+    .bloque-item: productos en fila, nombre y botón con espacio entre ellos.
+    .boton-eliminar: botón rojo con letras blancas y borde redondeado.
+    .acciones-carrito: contenedor de botones y total, elementos a los extremos.
+    .btn-vaciar: botón rojo para vaciar el carrito, clickeable.
+*/
+#contenedor-carrito {
+    background-color: gray;
+    padding: 10px;
+    margin: 0px;
+}
+
+#contenedor-carrito h2 {
+    text-align: center;
+}
+
+
+
+.bloque-item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 5px;
+    margin: 3px;
+}
+
+
+.boton-eliminar {
+    background-color: red;
+    color: white;       
+    margin-left: 40px;
+    border-radius: 6px;
+    padding: 10px;   
+    border: none;       
+    cursor: pointer;
+    height: 35px;
+}
+
+.acciones-carrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn-vaciar {
+    background-color: red;
+    color: white;
+    border: none;       
+    cursor: pointer;
+    height: 35px;
+    border-radius: 6px;
+}
+
+
+/* 
+    Estilos botones orden
+*/
+.botones-orden {
+    display: flex;              
+    justify-content: center;    
+    gap: 10px;                  
+    margin: 10px;        
+}
+
+.botones-orden button {
+    padding: 10px;          
+    background-color: #007bff;    
+    color: white;                 
+    border: none;                 
+    border-radius: 5px;          
+    cursor: pointer;              
+    font-weight: bold;            
+    transition: background-color 0.3s, transform 0.2s; 
+}
