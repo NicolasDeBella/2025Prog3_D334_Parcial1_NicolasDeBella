@@ -110,7 +110,6 @@ const contenedorFrutas = document.getElementById("productos");
 const contenedorCarrito = document.getElementById("contenedor-carrito");
 const contenedorOrdenarPdructos = document.getElementById("ordenar-productos");
 
-
 /*---------------------
     VARIABLES DEL PROGRAMA
 -----------------------*/
@@ -120,7 +119,6 @@ let carrito = [];
 ESCUCHADORES DE EVENTOS
 -----------------------*/
 barraBusqueda.addEventListener("input", filtrarProductos);
-
 
 /*---------------------
     EJERCICIO 2 - Imprimir datos del alumno
@@ -273,7 +271,6 @@ function eliminarProducto(elementoIndice){
    
 }
 
-
 /*---------------------
     Vaciar carrito
     • Vaciamos el array carrito y borramos localStorage.
@@ -283,8 +280,6 @@ function vaciarCarrito() {
     carrito = [];                           
     localStorage.removeItem("carrito"); 
     mostrarCarrito();  
-    
-    
 }
 
 /*---------------------
@@ -313,7 +308,6 @@ function actualizarContadorCarrito() {
     }
 }
 
-
 /* ---------------------------
     Ejercicio 8 - Botones para ordenar productos    
     En este ejercicio implemente dos botones que permiten ordenar los productos 
@@ -341,7 +335,6 @@ function mostrarBotonesOrden() {
         </div>
     `;
 }
-
 
 /*---------------------
     Inicialización
